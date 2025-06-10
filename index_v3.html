@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorando o Mundo dos Números!</title>
+    <link rel="stylesheet" href="style_v3.css">
+</head>
+<body>
+    <header>
+        <h1>🌈 Explorando o Mundo dos Números! 🌈</h1>
+        <p>Prepare-se para uma aventura divertida com a matemática!</p>
+    </header>
+
+    <main>
+        <section id="divisao" class="modulo">
+            <h2>🎈 Divisão: Compartilhando Balões! 🎈</h2>
+            <div class="descricao">
+                <p>Imagine que você tem muitos balões coloridos e quer dar a mesma quantidade para cada um dos seus amigos. A divisão nos ajuda a fazer essa partilha justa! É como um jogo de distribuir!</p>
+            </div>
+            <div class="conteudo-interativo">
+                <label for="totalBaloes">Total de Balões:</label>
+                <input type="number" id="totalBaloes" value="20" min="0">
+                <label for="numAmigos">Número de Amigos:</label>
+                <input type="number" id="numAmigos" value="4" min="1">
+                <button onclick="calcularDivisaoV3()">Dividir Balões!</button>
+                <p>Cada amigo ganha: <span id="resultadoDivisaoV3"></span> balões!</p>
+            </div>
+        </section>
+
+        <section id="fracao" class="modulo">
+            <h2>🎨 Fração: Pintando Partes! 🎨</h2>
+            <div class="descricao">
+                <p>Pense em uma folha de papel que você vai pintar. Se você pintar uma parte dela, você está usando uma fração! Frações nos mostram pedacinhos de um todo. Vamos descobrir qual pedacinho você pintou!</p>
+            </div>
+            <div class="conteudo-interativo">
+                <label for="partesPintadas">Partes Pintadas:</label>
+                <input type="number" id="partesPintadas" value="1" min="0">
+                <label for="totalPartes">Total de Partes:</label>
+                <input type="number" id="totalPartes" value="2" min="1">
+                <button onclick="calcularFracaoV3()">Ver Minha Pintura!</button>
+                <p>Sua pintura é: <span id="fracaoSimplificadaV3"></span></p>
+                <p>Isso é o mesmo que: <span id="valorDecimalV3"></span> da folha!</p>
+            </div>
+        </section>
+
+        <section id="areas" class="modulo">
+            <h2>🌳 Área: O Tamanho do Seu Quintal! 🌳</h2>
+            <div class="descricao">
+                <p>Quer saber o tamanho do seu quintal para brincar? A área nos diz o espaço que uma superfície ocupa. É como contar quantos tapetinhos quadrados cabem no seu quintal! Vamos medir!</p>
+            </div>
+            <div class="conteudo-interativo">
+                <label for="comprimentoQuintal">Comprimento do Quintal:</label>
+                <input type="number" id="comprimentoQuintal" value="7" min="0">
+                <label for="larguraQuintal">Largura do Quintal:</label>
+                <input type="number" id="larguraQuintal" value="6" min="0">
+                <button onclick="calcularAreaRetanguloV3()">Calcular Quintal!</button>
+                <p>Seu quintal tem: <span id="resultadoAreaV3"></span> tapetinhos quadrados!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Aprender matemática é uma aventura! 🚀</p>
+    </footer>
+
+    <script src="script_v3.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,233 @@
+body {
+    font-family: 'Fredoka One', cursive; /* Fonte mais arredondada e divertida */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #FFC0CB, #ADD8E6); /* Gradiente de rosa claro para azul claro */
+    color: #333;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #9370DB; /* Roxo médio */
+    color: white;
+    padding: 1.8em 0;
+    border-bottom: 10px solid #FFD700; /* Amarelo ouro */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: 3.2em; /* Título maior */
+    margin-bottom: 12px;
+    text-shadow: 5px 5px #FF4500; /* Sombra vibrante */
+    animation: fadeInDown 1s ease-out; /* Animação de entrada */
+}
+
+header p {
+    font-size: 1.5em;
+    color: #FFFACD; /* Branco creme */
+}
+
+/* Animação de entrada para o cabeçalho */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+main {
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; /* Espaçamento maior entre os módulos */
+}
+
+.modulo {
+    background-color: #E0FFFF; /* Azul ciano claro */
+    border-radius: 40px; /* Bordas super arredondadas */
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.4); /* Sombra mais pronunciada */
+    padding: 35px;
+    width: 30%;
+    min-width: 380px; /* Largura mínima maior */
+    box-sizing: border-box;
+    border: 6px solid #FF69B4; /* Rosa choque */
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Transições suaves */
+    position: relative;
+    overflow: hidden;
+}
+
+.modulo::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+    transform: rotate(45deg);
+    z-index: 0;
+}
+
+.modulo:hover {
+    transform: scale(1.03) rotate(-1deg); /* Efeito de leve zoom e rotação */
+    box-shadow: 15px 15px 35px rgba(0, 0, 0, 0.6); /* Sombra mais intensa no hover */
+}
+
+.modulo h2 {
+    color: #4B0082; /* Roxo índigo */
+    font-size: 2.8em; /* Título maior */
+    text-shadow: 4px 4px #FFD700; /* Sombra vibrante */
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.modulo .descricao {
+    background-color: #FFECB3; /* Amarelo claro para descrição */
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 3px dashed #FFA500; /* Borda tracejada laranja */
+    position: relative;
+    z-index: 1;
+}
+
+.modulo .descricao p {
+    font-size: 1.3em;
+    color: #6A5ACD; /* Azul ardósia */
+    line-height: 1.6;
+}
+
+.conteudo-interativo label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: bold;
+    color: #2E8B57; /* Verde mar */
+    font-size: 1.4em;
+    position: relative;
+    z-index: 1;
+}
+
+.conteudo-interativo input[type="number"] {
+    width: calc(100% - 40px); /* Ajuste para padding */
+    padding: 18px;
+    margin-bottom: 25px;
+    border: 4px solid #FF6347; /* Borda vermelha */
+    border-radius: 20px; /* Bordas super arredondadas */
+    font-size: 1.6em;
+    text-align: center;
+    background-color: #F0F8FF; /* Azul Alice */
+    color: #4B0082;
+    box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+}
+
+.conteudo-interativo button {
+    background-color: #32CD32; /* Verde limão */
+    color: white;
+    padding: 18px 30px;
+    border: none;
+    border-radius: 25px; /* Bordas super arredondadas */
+    cursor: pointer;
+    font-size: 1.8em; /* Botão maior */
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transições suaves */
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.4);
+    position: relative;
+    z-index: 1;
+}
+
+.conteudo-interativo button:hover {
+    background-color: #228B22; /* Verde floresta */
+    transform: scale(1.08) rotate(3deg); /* Pequeno zoom e rotação ao passar o mouse */
+}
+
+.conteudo-interativo p {
+    margin-top: 30px;
+    font-size: 2em; /* Resultado maior */
+    font-weight: bold;
+    color: #8B0000; /* Vermelho escuro */
+    text-shadow: 2px 2px #FFD700;
+    position: relative;
+    z-index: 1;
+}
+
+footer {
+    background-color: #9370DB; /* Roxo médio */
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 10px solid #FFD700; /* Amarelo */
+    box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.3);
+}
+
+footer p {
+    font-size: 1.3em;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .modulo {
+        width: 45%;
+    }
+}
+
+@media (max-width: 800px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+    header p {
+        font-size: 1.2em;
+    }
+    .modulo {
+        width: 90%;
+        margin: 20px auto;
+        padding: 25px;
+    }
+    .modulo h2 {
+        font-size: 2.2em;
+    }
+    .conteudo-interativo input[type="number"],
+    .conteudo-interativo button {
+        font-size: 1.4em;
+        padding: 15px;
+    }
+    .conteudo-interativo p {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 2em;
+    }
+    .modulo {
+        padding: 15px;
+    }
+    .modulo h2 {
+        font-size: 2em;
+    }
+    .conteudo-interativo input[type="number"],
+    .conteudo-interativo button {
+        font-size: 1.2em;
+        padding: 12px;
+    }
+    .conteudo-interativo p {
+        font-size: 1.4em;
+    }
+}
+
+
